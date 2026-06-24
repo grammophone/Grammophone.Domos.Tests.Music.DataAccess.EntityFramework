@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<ProjectGuid>{FC5A4128-EBF6-4017-AC54-8119F370E020}</ProjectGuid>
+		<TargetFramework>net472</TargetFramework>
+		<AssemblyTitle>Grammophone.Domos.Tests.Music.DataAccess.EntityFramework</AssemblyTitle>
+		<Product>Grammophone.Domos.Tests.Music.DataAccess.EntityFramework</Product>
+		<LangVersion>8.0</LangVersion>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="EntityFramework" Version="6.4.4" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Grammophone.DataAccess.EntityFramework\Grammophone.DataAccess.EntityFramework.csproj" />
+		<ProjectReference Include="..\Grammophone.DataAccess.EntityFramework.Plus\Grammophone.DataAccess.EntityFramework.Plus.csproj" />
+		<ProjectReference Include="..\Grammophone.Domos.DataAccess.EntityFramework\Grammophone.Domos.DataAccess.EntityFramework.csproj" />
+		<ProjectReference Include="..\Grammophone.Domos.Tests.Music.DataAccess\Grammophone.Domos.Tests.Music.DataAccess.csproj" />
+	</ItemGroup>
+</Project>
