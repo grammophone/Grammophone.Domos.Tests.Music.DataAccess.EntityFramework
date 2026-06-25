@@ -12,7 +12,17 @@ This project implements the EF6 domain container and adapter for `IMusicDomosDom
 
 This project expects these sibling projects to be available when building from the solution or from extracted submodules:
 
+Direct project references:
+
 - `Grammophone.DataAccess.EntityFramework`
 - `Grammophone.DataAccess.EntityFramework.Plus`
 - `Grammophone.Domos.DataAccess.EntityFramework`
 - `Grammophone.Domos.Tests.Music.DataAccess`
+
+Additional transitive project references:
+
+- `Grammophone.DataAccess`
+- `Grammophone.Domos.DataAccess`
+- `Grammophone.Domos.Domain`
+- `Grammophone.Domos.Tests.Music.Domain`
+- `Grammophone.GenericContentModel`
