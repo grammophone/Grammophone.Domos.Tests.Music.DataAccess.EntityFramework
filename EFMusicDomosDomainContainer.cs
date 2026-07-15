@@ -68,8 +68,6 @@ namespace Grammophone.Domos.Tests.Music.DataAccess.EntityFramework
 			modelBuilder.Entity<Track>().HasRequired(t => t.Owner).WithMany().HasForeignKey(t => t.OwnerID).WillCascadeOnDelete(false);
 
 			modelBuilder.Entity<AlbumStateTransition>().HasRequired(st => st.Album).WithMany(a => a.StateTransitions).HasForeignKey(st => st.AlbumID).WillCascadeOnDelete(false);
-			modelBuilder.Entity<AlbumStateTransition>().Ignore(st => st.FundsTransferEventID);
-			modelBuilder.Entity<AlbumStateTransition>().Ignore(st => st.FundsTransferEvent);
 		}
 	}
 }
